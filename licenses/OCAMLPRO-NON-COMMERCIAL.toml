@@ -1,7 +1,7 @@
 [license]
 
 key = "OCAMLPRO-NON-COMMERCIAL"
-name = "OCAMLPRO-NON-COMMERCIAL"
+name = "LicenseRef-OCamlpro-Non-Commercial"
 header = """
 This file is distributed under the terms of the
 OCAMLPRO-NON-COMMERCIAL license."""

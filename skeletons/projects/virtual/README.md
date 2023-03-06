@@ -10,3 +10,5 @@
 * General Documentation: !{doc-gen}
 * API Documentation: !{doc-api}
 * Sources: !{dev-repo}
+
+!(readme-trailer)

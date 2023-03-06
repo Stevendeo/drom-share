@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>!{name:html}</title>
-    <link rel="stylesheet" href="style.css?v=!{random}"/>
+    <link rel="stylesheet" href="style.css?v=!{docs/style.css:>:read:md5}"/>
     <link rel="icon" type="image/png" sizes="804x804"  href="favicon.png" />
   </head>
   <body>
@@ -21,6 +21,9 @@
         </ul>
         <p>Authors:</p>
         <ul>!{li-authors}</ul>
+      </div>
+      <div class="section">
+	!(readme-trailer:md-to-html)
       </div>
       <div class="trailer">
         <hr/>

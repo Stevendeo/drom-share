@@ -1,6 +1,6 @@
 [skeleton]
 name = "driver"
-inherits = "virtual"
+inherits = "program"
 
 [file]
 dune_ = { file = "dune", skips = [ "@dune" ] }
