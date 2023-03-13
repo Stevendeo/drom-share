@@ -27,7 +27,7 @@ build-deps:
 	if ! [ -e _opam ]; then \
 	   opam switch create . !{edition} ; \
 	fi
-	opam install ./*.opam --deps-only
+	opam install ./opam/*.opam --deps-only
 
 ![if:gen:docs]
 .PHONY: doc-common odoc view![if:gen:sphinx] sphinx![fi]
@@ -69,7 +69,7 @@ uninstall:
 	opam uninstall .
 
 dev-deps:
-	opam install ./*.opam --deps-only --with-doc --with-test
+	opam install ./opam/*.opam --deps-only --with-doc --with-test
 
 test:
 	./scripts/before.sh test
