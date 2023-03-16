@@ -2,3 +2,6 @@
 
 skeleton := "program"
 kind := "program"
+
+[fields]
+dune-flags = ":standard (:include linking.sexp)"
