@@ -1,4 +1,13 @@
 
+Version 0.9.2 (2023-??-??)
+* Packages:
+  * New field `dune-flags`, with value `:standard` by default
+* Package `program` and `driver`:
+  * Field `dune-flags` initialized to `:standard (:include linking.sexp)`
+* Package `js_program`, `js_driver` and `js_library`:
+  * Remove default preprocessor in dune_
+  * Use !{program-name} as dune name
+
 Version 0.9.1 (2023-03-13)
 * Add CHANGES.md
 * `virtual` project skeletons (inherited by all):
