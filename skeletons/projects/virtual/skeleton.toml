@@ -8,6 +8,9 @@ name = "virtual"
 "CHANGES.md" = {
    file = "CHANGES.md", create = true
    }
+"README.md" = {
+   file = "README.md", create = true
+   }
 
 "dot_ocp-indent" = {
    file = ".ocp-indent", create = true,
