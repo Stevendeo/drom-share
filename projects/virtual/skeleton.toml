@@ -1,0 +1,92 @@
+[skeleton]
+name = "virtual"
+
+[file]
+"Makefile" = { skips = [ "@make" ], create = true }
+"Makefile.drom" = { skips = [ "@make" ] }
+"dune-project_" = { file = "dune-project", skips = [ "@dune" ] }
+
+"CHANGES.md" = {
+   file = "CHANGES.md", create = true
+   }
+"README.md" = {
+   file = "README.md", create = true
+   }
+
+"dot_ocp-indent" = {
+   file = ".ocp-indent", create = true,
+   skips = [ "@ocamlformat" ] }
+
+"dot_ocamlformat" = {
+   file = ".ocamlformat", create = true,
+   skips = [ "@ocamlformat" ] }
+"dot_ocamlformat-ignore" = {
+   create = true,
+   file = ".ocamlformat-ignore",
+   skips = [ "@ocamlformat" ] }
+
+"dot_vscode/tasks.json" = { file = ".vscode/tasks.json",
+                            create = true,
+                            skips = [ "@vscode" ] }
+"dot_vscode/settings.json" = { file = ".vscode/settings.json",
+                               create = true,
+                               skips = [ "@vscode" ] }
+
+"dot_github/workflows/workflow.yml" = {
+   file = ".github/workflows/workflow.yml",
+   skips = [ "@github", "@workflows" ] }
+
+"dot_gitignore" = { file = ".gitignore", skips = [ "@git" ]  }
+
+"docs/index.html" = { skips = "@docs", create = true }
+"docs/favicon.png" = { skips = [ "@docs" ], subst = false }
+"docs/README.txt" = { skips = "@docs", create = true }
+"docs/style.css" = { skips = "@docs", create = true }
+
+"sphinx/about.rst" = { skips = [ "@sphinx", "@docs" ], create = true }
+"sphinx/conf.py" = { skips = [ "@sphinx", "@docs" ], create = true }
+"sphinx/under_static/css/fixes.css" = {
+             skips = [ "@sphinx", "@docs" ],
+             file = "sphinx/_static/css/fixes.css",
+             create = true }
+"sphinx/index.rst" = { skips = [ "@sphinx", "@docs" ], create = true }
+"sphinx/install.rst" = { skips = [ "@sphinx", "@docs" ], create = true }
+"sphinx/license.rst" = { skips = [ "@sphinx", "@docs" ], create = true }
+
+"docs/doc/index.html" = { skips = "@docs", create = true }
+"docs/sphinx/index.html" = { skips = "@docs", create = true }
+
+"test/expect-tests/dune_" = {
+                          file = "test/expect-tests/dune",
+			  create = true,
+                          skips = [ "@test", "@dune" ] }
+"test/expect-tests/dune.drom" = {
+                          skips = [ "@test", "@dune" ] }
+"test/expect-tests/test.ml" = {
+			  create = true,
+			  skips = "@test" }
+"test/inline-tests/dune_" = {
+			  create = true,
+                          file = "test/inline-tests/dune",
+                          skips = [ "@test" , "@dune" ] }
+"test/inline-tests/dune.drom" = {
+                          skips = [ "@test" , "@dune" ] }
+"test/inline-tests/test.ml" = {
+			  create = true,
+			  skips = "@test" }
+
+"test/output-tests/dune_" = {
+			  create = true,
+                          file = "test/output-tests/dune",
+                          skips = [ "@test", "@dune" ] }
+"test/output-tests/dune.drom" = {
+                          skips = [ "@test", "@dune" ] }
+"test/output-tests/test2.ml" = {
+			  create = true,
+			  skips = "@test" }
+"test/output-tests/test1.expected" = {
+			  create = true,
+			  skips = "@test" }
+"test/output-tests/test2.expected" = {
+			  create = true,
+			  skips = "@test" }
