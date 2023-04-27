@@ -1,5 +1,15 @@
 
-Version 0.9.2 (2023-??-??)
+Version 0.9.3 (2023-??-??)
+* DROM_VERSION set to 0.9.2~dev3
+* Project `virtual`:
+  * Create file `.vscode/settings.json`, skipped with `@vscode`
+  * Create file `.vscode/tasks.json`, skipped with `@vscode`
+* Fix static-build.sh
+* Move skeletons/{projects,packages} to root dir
+* Make many files modifiable only during the 'create' phase
+* Move generated content from Makefile/dune to Makefile.drom and dune.drom
+
+Version 0.9.2 (2023-04-21)
 * Packages:
   * New field `dune-flags`, with value `:standard` by default
 * Package `program` and `driver`:
