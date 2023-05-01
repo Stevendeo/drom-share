@@ -12,9 +12,13 @@ Versioned files for `drom`
    and `<branch>` is the branch you want to test
 4. Edit the files:
    * `VERSION`: the new version of this branch
-   * `LATEST`: a *stable* version that users are advised to use
    * `DROM_VERSION`: if `drom` must be upgraded to use this version
 5. Push to `master` and remote tag the version
+6. Once the version is tested ok, update `LATEST_VERSIONS`:
+   * `dev` version should point to the new tagged version
+   * the previously `dev` version should be moved to the next line,
+      with the content of its `DROM_VERSION` as corresponding drom
+      version (often with `~dev` to match development versions too)
 
 ## Syntax of skeletons in `projects/` and `packages/`
 
