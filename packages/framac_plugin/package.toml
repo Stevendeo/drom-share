@@ -1,0 +1,4 @@
+# Everything above is inherited from 'virtual' package skeleton
+
+skeleton := "framac_plugin"
+kind := "program"

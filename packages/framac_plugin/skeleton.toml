@@ -1,0 +1,9 @@
+[skeleton]
+name = "framac_plugin"
+inherits = "virtual"
+
+[file]
+dune_ = { file = "dune", skips = "@dune" }
+"main.ml" = {skips = "@code" }
+"index.mld" = { skips = [ "@docs" ] }
+
